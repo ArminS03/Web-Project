@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدیریت سوالات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>مدیریت سوالات</h2>
+        <button onclick="toggleDark(this)">تغییر به حالت تاریک</button>
+        <button onclick="window.location.href='new_question.html'">ایجاد سوال جدید</button>
+        <div class="question-card" onclick="toggleCard(this)">
+            <div class="question-header">
+                کوییز وب
+            </div>
+            <div class="question-body">
+                <p>فرق میان textContent و innerHTML چیست؟</p>
+                <label for="category1">دسته‌بندی:</label>
+                <select id="category1" name="category">
+                    <option value="science">کامپیوتر</option>
+                    <option value="math">ریاضی</option>
+                    <option value="history">تاریخی</option>
+                </select>
+                <label for="rating1">درجه سختی:</label>
+                <div id="rating1">
+                    <span class="star" data-value="1" onclick="clickStars(this)" onmouseover="inStars(this)" onmouseleave="outStars(this)">★</span>
+                    <span class="star" data-value="2" onclick="clickStars(this)" onmouseover="inStars(this)" onmouseleave="outStars(this)">★</span>
+                    <span class="star" data-value="3" onclick="clickStars(this)" onmouseover="inStars(this)" onmouseleave="outStars(this)">★</span>
+                    <span class="star" data-value="4" onclick="clickStars(this)" onmouseover="inStars(this)" onmouseleave="outStars(this)">★</span>
+                    <span class="star" data-value="5" onclick="clickStars(this)" onmouseover="inStars(this)" onmouseleave="outStars(this)">★</span>
+                </div>
+                <div class="related-questions">
+                    <h4>سوالات مرتبط:</h4>
+                    <ul>
+                        <li>سوال ۱: <span class="related-question">توضیحی در مورد textContent</span></li>
+                        <li>سوال ۲: <span class="related-question">innerHTML در جاوا اسکریپت</span></li>
+                    </ul>
+                    <button onclick="window.location.href='select_related_questions.html'">تغییر سوالات مرتبط</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card" onclick="toggleCard(this)">
+            <div class="question-header">
+                ریاضی پایه
+            </div>
+            <div class="question-body">
+                <p>انتگرال sin(x) چیست؟</p>
+                <label for="category2">دسته‌بندی:</label>
+                <select id="category2" name="category">
+                    <option value="science">کامپیوتر</option>
+                    <option value="math">ریاضی</option>
+                    <option value="history">تاریخی</option>
+                </select>
+                <label for="rating2">درجه سختی:</label>
+                <div id="rating2">
+                    <span class="star" data-value="1" onclick="clickStars(this)" onmouseover="inStars(this)" onmouseleave="outStars(this)">★</span>
+                    <span class="star" data-value="2" onclick="clickStars(this)" onmouseover="inStars(this)" onmouseleave="outStars(this)">★</span>
+                    <span class="star" data-value="3" onclick="clickStars(this)" onmouseover="inStars(this)" onmouseleave="outStars(this)">★</span>
+                    <span class="star" data-value="4" onclick="clickStars(this)" onmouseover="inStars(this)" onmouseleave="outStars(this)">★</span>
+                    <span class="star" data-value="5" onclick="clickStars(this)" onmouseover="inStars(this)" onmouseleave="outStars(this)">★</span>
+                </div>
+                <div class="related-questions">
+                    <h4>سوالات مرتبط:</h4>
+                    <ul>
+                        <li>سوال ۱: <span class="related-question">مشتق sin(x)</span></li>
+                        <li>سوال ۲: <span class="related-question">حساب دیفرانسیل</span></li>
+                    </ul>
+                    <button onclick="window.location.href='select_related_questions.html'">تغییر سوالات مرتبط</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

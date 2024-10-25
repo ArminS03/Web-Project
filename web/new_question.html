@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ایجاد سوال جدید</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>ایجاد سوال جدید</h2>
+        <button onclick="toggleDark(this)">تغییر به حالت تاریک</button>
+        <form action="/submit-question" method="post">
+            <label for="question-name">نام سوال:</label>
+            <input type="text" id="question-name" name="question-name" required>
+            
+            <label for="question-text">متن سوال:</label>
+            <textarea id="question-text" name="question-text" rows="4" required></textarea>
+            
+            <label for="choice1">گزینه ۱:</label>
+            <input type="text" id="choice1" class="correct-answer" name="choice1" required>
+            
+            <label for="choice2">گزینه ۲:</label>
+            <input type="text" id="choice2" name="choice2" required>
+            
+            <label for="choice3">گزینه ۳:</label>
+            <input type="text" id="choice3" name="choice3" required>
+            
+            <label for="choice4">گزینه ۴:</label>
+            <input type="text" id="choice4" name="choice4" required>
+            
+            <label for="correct-answer">گزینه صحیح:</label>
+            <select id="correct-answer" name="correct-answer" required>
+                <option value="1">گزینه ۱</option>
+                <option value="2">گزینه ۲</option>
+                <option value="3">گزینه ۳</option>
+                <option value="4">گزینه ۴</option>
+            </select>
+            
+            <button type="submit">ذخیره سوال</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ایجاد دسته جدید</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="toggleDark(this)">تغییر به حالت تاریک</button>
+        <h2>ایجاد دسته جدید</h2>
+        <form id="addCategoryForm">
+            <label for="categoryName">نام دسته:</label>
+            <input type="text" id="categoryName" required>
+            <button type="submit">اضافه کردن دسته</button>
+        </form>
+        <button onclick="window.history.back()">بازگشت</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

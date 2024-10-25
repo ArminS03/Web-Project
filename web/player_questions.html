@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سوالات بازیکن</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>سوالات بازیکن</h2>
+        <button onclick="toggleDark(this)">تغییر به حالت تاریک</button>
+        <div class="question-card" onclick="togglePlayerCard(this)">
+            <div class="question-header">
+                <nav class="designer-name">کوییز وب</nav>
+                <span class="designer-name">طراح: آرمین</span>
+            </div>
+            <div class="question-body">
+                <p>فرق میان textContent و innerHTML چیست؟</p>
+                    <div class="options">
+                        <button class="option" onclick="checkAnswer(this, true)">گزینه ۱: textContent سریع‌تر است</button>
+                        <button class="option" onclick="checkAnswer(this, false)">گزینه ۲: innerHTML ایمن‌تر است</button>        
+                        <button class="option" onclick="checkAnswer(this, false)">گزینه ۳: هر دو مشابه‌اند</button>
+                        <button class="option" onclick="checkAnswer(this, false)">گزینه ۴: فقط innerHTML وجود دارد</button>    
+                    </div>
+                <div class="correct-answer" style="display:none;">پاسخ صحیح: گزینه ۴</div>
+            </div>
+        </div>
+
+        <div class="question-card" onclick="togglePlayerCard(this)">
+            <div class="question-header">
+                <nav class="designer-name">ریاضی پایه</nav>
+                <span class="designer-name">طراح: مهدی</span>
+            </div>
+            <div class="question-body">
+                <p>انتگرال sin(x) چیست؟</p>
+                    <div class="options">
+                        <button class="option" onclick="checkAnswer(this, false)">گزینه ۱: -cos(x)</button>
+                        <button class="option" onclick="checkAnswer(this, true)">گزینه ۲: cos(x)</button>    
+                        <button class="option" onclick="checkAnswer(this, false)">گزینه ۳: sin(x)</button>
+                        <button class="option" onclick="checkAnswer(this, false)">گزینه ۴: x*sin(x)</button>    
+                    </div>
+                <div class="correct-answer" style="display:none;">پاسخ صحیح: گزینه ۲</div>
+            </div>
+        </div>
+
+        <button onclick="window.location.href='player_home.html'">بازگشت به صفحه اصلی</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

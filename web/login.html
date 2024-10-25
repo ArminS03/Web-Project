@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>ورود</h2>
+            <button onclick="toggleDark(this)">تغییر به حالت تاریک</button>
+            <form id="login-form">
+                <label for="user-select">انتخاب کاربر</label>
+                <select id="user-select" name="user" required>
+                    <option value="">-- انتخاب کنید --</option>
+                    <option value="player">بازیکن</option>
+                    <option value="designer">طراح</option>
+                </select>
+                <label for="login-username">نام کاربری</label>
+                <input type="text" id="login-username" name="username" required>
+                <label for="login-password">رمز عبور</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">ورود</button>
+            </form>
+            <p>حساب کاربری ندارید؟ <a href="signup.html">ثبت‌نام کنید</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

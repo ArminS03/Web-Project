@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>انتخاب سوالات مرتبط</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>انتخاب سوالات مرتبط</h2>
+        <button onclick="toggleDark(this)">تغییر به حالت تاریک</button>
+        <div id="available-questions">
+            <label><input type="checkbox" value="سوال ۱"> سوال ۱: توضیحی در مورد textContent</label><br>
+            <label><input type="checkbox" value="سوال ۲"> سوال ۲: innerHTML در جاوا اسکریپت</label><br>
+            <label><input type="checkbox" value="سوال ۳"> سوال ۳: مشتق sin(x)</label><br>
+            <label><input type="checkbox" value="سوال ۴"> سوال ۴: حساب دیفرانسیل</label><br>
+        </div>
+        <button onclick="submitSelection()">تایید انتخاب</button>
+        <button onclick="window.history.back()">بازگشت</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
